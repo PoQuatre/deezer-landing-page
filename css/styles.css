@@ -1,0 +1,35 @@
+.hero-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  height: 40vh;
+
+  background-image: url("../img/hero.png");
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .position-md-relative {
+    position: relative;
+  }
+
+  .position-md-unset {
+    position: unset;
+  }
+
+  .w-md-50 {
+    width: 50% !important;
+  }
+
+  .hero-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    right: auto;
+
+    width: 50vw;
+    height: auto;
+  }
+}
