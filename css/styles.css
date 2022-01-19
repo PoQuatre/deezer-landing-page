@@ -1,3 +1,7 @@
+.header {
+  margin-top: 4rem;
+}
+
 .hero-img {
   position: absolute;
   left: 0;
@@ -8,6 +12,15 @@
   background-image: url("../img/hero.png");
   background-size: cover;
   background-position: center 0;
+}
+
+.phone-section {
+  margin-top: 40vh;
+  background-color: #f9f9f9;
+}
+
+.phone {
+  height: 30rem;
 }
 
 @media (min-width: 768px) {
@@ -30,7 +43,11 @@
     bottom: 0;
     right: auto;
 
-    width: 50vw;
+    width: 48vw;
     height: auto;
+  }
+
+  .phone-section {
+    margin-top: 0;
   }
 }
