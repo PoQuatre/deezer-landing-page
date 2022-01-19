@@ -31,6 +31,22 @@
   fill-opacity: 0.7;
 }
 
+li.checked {
+  list-style-image: url("../img/check.svg");
+  font-size: 1.5rem;
+}
+
+li.crossed {
+  list-style-image: url("../img/cross.svg");
+  font-size: 1.75rem;
+  opacity: 0.5;
+}
+
+li.checked *,
+li.crossed * {
+  font-size: 1rem;
+}
+
 @media (min-width: 768px) {
   .position-md-relative {
     position: relative;
