@@ -47,6 +47,37 @@ li.crossed * {
   font-size: 1rem;
 }
 
+.recommended {
+  position: relative;
+  margin-top: 4.5rem;
+}
+
+.recommended::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 0;
+  height: 0;
+
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--bs-primary);
+}
+
+.recommended::after {
+  content: "Recommandé";
+  text-transform: uppercase;
+  color: var(--bs-gray-500);
+
+  position: absolute;
+  top: -3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media (min-width: 768px) {
   .position-md-relative {
     position: relative;
@@ -72,6 +103,14 @@ li.crossed * {
   }
 
   .phone-section {
+    margin-top: 0;
+  }
+
+  .cards {
+    margin-top: 4.5rem;
+  }
+
+  .recommended {
     margin-top: 0;
   }
 }
